@@ -9,9 +9,6 @@ import java.util.List;
 
 @Repository
 public interface ProfileRepository extends JpaRepository<Profile, Long> {
-    List<Project> findAllByOrderByDisplayOrderAsc();
-    List<Project> findByFeaturedTrueOrderByDisplayOrderAsc();
-    List<Project> findByStatusOrderByDisplayOrderAsc(Project.ProjectStatus status);
 
 
 }
